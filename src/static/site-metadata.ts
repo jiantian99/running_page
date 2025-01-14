@@ -11,13 +11,13 @@ interface ISiteMetadataResult {
 
 const data: ISiteMetadataResult = {
   siteTitle: 'Running Page',
-  siteUrl: 'https://yihong.run',
-  logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTtc69JxHNcmN1ETpMUX4dozAgAN6iPjWalQ&usqp=CAU',
+  siteUrl: 'https://jiantian99.github.io/running-page/',
+  logo: 'https://i.imgtg.com/2023/01/26/SRR4S.jpg',
   description: 'Personal site and blog',
   navLinks: [
     {
-      name: 'Blog',
-      url: 'https://github.com/yihong0618/gitblog',
+      name: 'Strava',
+      url: 'https://www.strava.com/athletes/111314187',
     },
     {
       name: 'About',

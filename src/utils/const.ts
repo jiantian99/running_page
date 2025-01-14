@@ -3,7 +3,7 @@ const MAPBOX_TOKEN =
   // For security reasons, please avoid using the default public token provided by Mapbox as much as possible.
   // Instead, manually add a new token and apply URL restrictions.
   // (please refer to https://github.com/yihong0618/running_page/issues/643#issuecomment-2042668580)
-  'pk.eyJ1IjoieWlob25nMDYxOCIsImEiOiJja2J3M28xbG4wYzl0MzJxZm0ya2Fua2p2In0.PNKfkeQwYuyGOTT_x9BJ4Q';
+  'pk.eyJ1IjoibGF0ZXI0MzExIiwiYSI6ImNsYmJtaTI1cTBqYzYzcGxteDk1azFtN2wifQ.B3NPHv9ZnguPZJzgnNqpZA';
 const MUNICIPALITY_CITIES_ARR = [
   '北京市',
   '上海市',
@@ -52,7 +52,7 @@ const IS_CHINESE = true;
 const USE_ANIMATION_FOR_GRID = false;
 const CHINESE_INFO_MESSAGE = (yearLength: number, year: string): string => {
   const yearStr = year === 'Total' ? '所有' : ` ${year} `;
-  return `我用 App 记录自己跑步 ${yearLength} 年了，下面列表展示的是${yearStr}的数据`;
+  return `我用 Coros记录自己跑步 ${yearLength} 年了，下面展示的是${yearStr}的数据`;
 };
 const ENGLISH_INFO_MESSAGE = (yearLength: number, year: string): string =>
   `Running Journey with ${yearLength} Years, the table shows year ${year} data`;
@@ -120,7 +120,7 @@ export {
   ACTIVITY_TYPES,
 };
 
-const nike = 'rgb(224,237,94)'; // if you want change the main color change here src/styles/variables.scss
+const nike = 'rgb(175, 238, 238)'; // if you want change the main color change here src/styles/variables.scss
 const dark_vanilla = 'rgb(228,212,220)';
 
 // If your map has an offset please change this line
