@@ -22,12 +22,6 @@ config.yaml
 .venv/
 
 # Ignore FIT files and folders
-FIT_OUT/
 *.fit
-activities/
-GPX_OUT/
-TCX_OUT/
-Workouts/
-
 # Keep SVG files
 !assets/*.svg
