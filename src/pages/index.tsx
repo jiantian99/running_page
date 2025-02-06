@@ -27,10 +27,10 @@ import {
 const Index = () => {
   const { siteTitle } = useSiteMetadata();
   const { activities, thisYear } = useActivities();
-  const [year, setYear] = useState(thisYear);
+  const [year, setYear] = useState('Total');
   const [runIndex, setRunIndex] = useState(-1);
   const [runs, setActivity] = useState(
-    filterAndSortRuns(activities, year, filterYearRuns, sortDateFunc)
+    filterAndSortRuns(activities, 'Total', filterYearRuns, sortDateFunc)
   );
   const [title, setTitle] = useState('');
   const [geoData, setGeoData] = useState(geoJsonForRuns(runs));
@@ -49,7 +49,7 @@ const Index = () => {
   ) => {
     scrollToMap();
     if (name != 'Year') {
-      setYear(thisYear);
+      setYear('Total');
     }
     setActivity(filterAndSortRuns(activities, item, func, sortDateFunc));
     setRunIndex(-1);
@@ -57,7 +57,6 @@ const Index = () => {
   };
 
   const changeYear = (y: string) => {
-    // default year
     setYear(y);
 
     if ((viewState.zoom ?? 0) > 3 && bounds) {
